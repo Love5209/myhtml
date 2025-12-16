@@ -355,6 +355,7 @@
                 alert('请输入金额');
                 return 'no_amount';
             }
+            alert('正在支付中：' + amount.toFixed(2) + '元');
             console.log('WebView: 确认支付 ' + amount + ' 元');
             // 通知Android调用微信支付
             if (window.AndroidBridge) {
